@@ -19,4 +19,4 @@ jobs:
 workflows:
   examples-workflows:
     jobs:
-      - devProject
+      - devopsProject3year
