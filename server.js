@@ -1,7 +1,15 @@
-const express = require('express')
-const app = express()
-app.get('/', (req,res) => {
-    res.send("hello")
-})
+const express = require('express');
+const app = express();
 
-module.exports = app
+app.use(express.urlencoded({ extended: true }));
+
+app.get('/', (req, res) => {
+    res.sendFile(__dirname + '/register.html');
+});
+
+app.post('/register', (req, res) => {
+   
+    
+});
+
+module.exports = app;
