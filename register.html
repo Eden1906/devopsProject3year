@@ -9,6 +9,8 @@
 <body>
     <input type="text" name="name" id="name"><br>
     <input type="text" name="grade1" id="grade1"><br>
+    <input type="text" name="grade2" id="grade2"><br>
+    <input type="text" name="grade3" id="grade3"><br>
     <button id="sub">submit</button>
 
     <script type="module">
@@ -38,10 +40,14 @@
         document.getElementById("sub").addEventListener('click', function writeUserData() {
           const name = document.getElementById("name").value;
           const grade1 = document.getElementById("grade1").value;
+          const grade2 = document.getElementById("grade2").value;
+          const grade3 = document.getElementById("grade3").value;
           const userRef = push(ref(db, 'users')); // Generate a new unique ID for each user
           set(userRef, {
             username: name,
-            grade1: grade1
+            grade1: grade1,
+            grade2: grade2,
+            grade3: grade3
           });
         });
     </script>
