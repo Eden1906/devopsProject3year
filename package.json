@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest --detectOpenHandles",
+    "prestart": "npx eslint",
     "start": "node index.js",
     "eslint": "npx eslint ."
   },

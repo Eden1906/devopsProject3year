@@ -12,6 +12,12 @@ jobs:
       - run:
          name: install dependecies - NPM packages
          command: npm install
+      - run:
+         name: run eslint
+         command: npm run eslint
+      -run:
+         name: run tests
+         command: npm run test
  
 
 workflows:

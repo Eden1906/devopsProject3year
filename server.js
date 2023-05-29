@@ -10,7 +10,7 @@ app.get('/', (req, res) => {
 });
 // eslint-disable-next-line no-unused-vars
 app.post('/register', (req, res) => {
-  // Add your code for handling the registration request here
+  res.sendStatus(200);
 });
 
 module.exports = app;
