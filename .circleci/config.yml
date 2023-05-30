@@ -18,6 +18,10 @@ jobs:
       - run:
          name: run tests
          command: npm run test
+      - run:
+         name: deploy to service
+         command: curl "https://api.render.com/deploy/srv-XXYYZZ?key=AABBCC&ref=baaa339926cb474b61c1f0e6297b024eaa09ac7d"
+
  
 
 workflows:
