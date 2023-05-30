@@ -75,7 +75,7 @@
           const grade2 = document.getElementById("grade2").value;
           const grade3 = document.getElementById("grade3").value;
           if(!(grade1 >= 0 && grade1 <= 100 && grade2 >= 0 && grade2 <= 100 && grade3 >= 0 && grade3 <= 100)) {
-            alert("Invalid grade ente. try again");
+            alert("Invalid grade. try again");
             return;
           }
           const userRef = push(ref(db, 'users')); // Generate a new unique ID for each user
